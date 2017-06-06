@@ -1,0 +1,31 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="zh-CN">
+<head>
+<title>蒙灰效果</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="description" content="" />
+<script type="text/javascript" src="../resource/js/jquery-1.9.1.min.js"></script>
+<script type="text/javascript">
+ function mask() {
+      var modal = $('<div id="modal" style="position:absolute;left:0;top:0;width:100%;height:100%;background:rgba(0,0,0,0.6);z-index:99999999;font-size: 45px;text-align: center;color: white;padding-top: 300px;line-height: 2.0em"><image style="width:25px;" src="../resource/image/loading.gif" /><div>玩命加载中..</div></div>');
+        	modal.appendTo(document.body);
+        	$("#modal").css("height", $(document).height() - 5);
+        	$("#modal").fadeIn("slow");
+        	setTimeout(unmask,2000);
+   }
+function unmask(){
+       $("#modal").fadeOut();
+        $("#modal").remove();
+}
+</script>
+</head>
+    <body>
+    	<p onclick="mask();">蒙灰,文字提示,动态加载图片</p>
+    	<p id="1" onclick="">AAAABBCC</p>
+	<p id="2">CDEF</p>
+	<p id="3">ADF</p>
+	<div id="div1">
+		<div id="div2">DDF</div>
+	</div>
+    </body>
+</html>
