@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>大图片背景</title>
+    <style>
+        #test1{
+            border:1px solid orange;
+            width: 500px;
+            height: 500px;
+            background-image:url(small.jpg);
+            background-repeat: no-repeat;
+            background-position:center;
+        }
+        #test2{
+            width:50px;
+            height: 30px;
+            border:1px solid red;
+            /**
+            元素背景色
+            background-color: gray;
+            元素背景图片
+            background-image: url(bg.png);
+            控制显示那块图片
+            background-position: -150px -530px;*/
+            background : gray url(bg.png) no-repeat -150px -530px;
+        }
+
+    </style>
+</head>
+<body>
+    <div id="test1"></div>
+    <div id="test2"></div>
+</body>
+</html>
