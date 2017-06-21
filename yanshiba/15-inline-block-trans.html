@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>内联与块状的转化</title>
+    <style>
+        /**内联元素加上display:block这样的属性，让它也有每次都从新行开始的属性，即成为块元素同样*/
+        span {
+            width: 200px;
+            height: 200px;
+            background: red;
+            /**display: block;*/
+        }
+        /**块状元素加上display:inline属性,就变成了行内元素不单独占一行,从左到右显示*/
+        div {
+            height: 200px;
+            width: 200px;
+            background: gray;
+            display: inline;
+        }
+
+    </style>
+</head>
+<body>
+<div>块状</div>
+<span>行内</span>
+</body>
+</html>
