@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>有序列表和无序列表</title>
+    <style>
+        /**ul与ol前的符号是可以修改的。只需要修改它们的type值。
+        ul的type属性有：disc—实心圆(默认）、circle—空心圆、square—实心方块
+        ol的type属性有：1—数字（默认）、a—小写字母、A—大写字母、i—小写希腊字母、I—大写希腊字母。
+        通过CSS也可以在将它们前的符号改为图片，这样列表显示就会更美观了*/
+        ul li{
+            list-style-type: square;
+        }
+        ol li{
+            list-style-type: upper-roman;
+        }
+    </style>
+</head>
+<body>
+    <ul>
+        <li>春</li>
+        <li>夏</li>
+        <li>秋</li>
+        <li>冬</li>
+    </ul>
+    <ol>
+        <li>有序1</li>
+        <li>有序2</li>
+        <li>有序3</li>
+        <li>有序4</li>
+    </ol>
+</body>
+</html>
