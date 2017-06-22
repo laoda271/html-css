@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>img是块状还是内联</title>
+    <style>
+        img{
+            width:300px;
+            height: 180px;
+            margin:0px;
+            display: block;
+        }
+        #test1{
+            width:500px;
+            height:300px;
+            border: 1px solid red;
+        }
+    </style>
+</head>
+<body>
+    <!-- alt 如果无法显示图像，浏览器将显示替代文本-->
+    <img src="small.jpg" alt="">
+    <img src="small.jpg" alt="">
+    <div id="test1">图片是内联元素,同时是内联替换元素,内联替换元素是可以设置宽高的</div>
+</body>
+</html>
