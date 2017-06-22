@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>css a标签伪类</title>
+    <style>
+        /**未访问的链接*/
+        a:link{
+            color:red;
+        }
+        /**访问后的链接*/
+        a:visited {
+            color:green;
+        }
+        /**鼠标移到到链接上*/
+        a:hover {
+            color:orange;
+        }
+        /**选定的链接*/
+        a:active {
+            color: black;
+        }
+    </style>
+</head>
+<body>
+    <div>
+        css允许我们对a标签的四种状态设置各自的css特性,叫css伪类<br/>
+        1.active一般不用写
+        2.一定要注意顺序,LVHA
+        3.a:link可以简写为a
+    </div>
+    <div>
+        <a href="#">空链接</a>
+        <a href="#">空链接</a>
+        <a href="#">空链接</a>
+        <a href="#">空链接</a>
+    </div>
+</body>
+</html>
